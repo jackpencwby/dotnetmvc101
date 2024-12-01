@@ -12,6 +12,12 @@
             <p>รหัสนักศึกษา : @student.StudentID</p>
             <p>ชื่อ : @student.Name</p>
             <p>คะเเนน : @student.Score</p>
+            @if(@student.Score >= 50) {
+                <strong class="text-success">ผ่าน</strong>
+            }
+            else {
+                <strong class="text-danger">ไม่ผ่าน</strong>
+            }
         </div>
         <hr/>
     }
