@@ -5,8 +5,9 @@ namespace dotnetmvc101.Models
     public class Student
     {
         private string student_id;
-        private string name;
-        private int score;
+        private int section;
+        private string fullname;
+        private string nickname;
 
         [Key]
         public string StudentID
@@ -16,17 +17,24 @@ namespace dotnetmvc101.Models
         }
 
         [Required]
-        public string Name
+        public int Section
         {
-            get { return name; }
-            set { name = value; }
+            get { return section; }
+            set { section = value; }
         }
 
         [Required]
-        public int Score
+        public string Fullname
         {
-            get { return score; }
-            set { score = value; }
+            get { return fullname; }
+            set { fullname = value; }
+        }
+
+        [Required]
+        public string Nickname
+        {
+            get { return nickname; }
+            set { nickname = value; }
         }
     }
 }
