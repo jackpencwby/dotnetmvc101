@@ -2,14 +2,14 @@
 {
     public class Student
     {
-        private string id;
+        private string student_id;
         private string name;
         private int score;
 
-        public string Id
+        public string StudentID
         {
-            get { return id; }
-            set { id = value; }
+            get { return student_id; }
+            set { student_id = value; }
         }
 
         public string Name

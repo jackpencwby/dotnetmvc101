@@ -1,7 +1,15 @@
-﻿
+﻿@model dotnetmvc101.Models.Student;
+
 @{
     ViewData["Title"] = "คะเเนนสอบของนักศึกษาทั้งหมด";
 }
 
 <h1 class="text-center">คะเเนนสอบวิชา Web Application</h1>
 
+<div>
+    <div>
+        <p>รหัสนักศึกษา : @Model.StudentID</p>
+        <p>ชื่อ : @Model.Name</p>
+        <p>คะเเนน : @Model.Score</p>
+    </div>
+</div>
