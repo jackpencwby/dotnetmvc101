@@ -6,22 +6,22 @@ namespace dotnetmvc101.Controllers
     {
         public IActionResult Index()
         {
-            return Content("หน้าเเรก");
+            return View();
         }
 
         public IActionResult SaveScore()
         {
-            return Content("บันทึกคะเเนนสอบวิชา Web Application");
+            return View();
         }
 
         public IActionResult ShowAllStudentScore()
         {
-            return Content("คะเเนนสอบวิชา Web Application");
+            return View();
         }
 
         public IActionResult ShowStudentScore(string id)
         {
-            return Content($"คะเเนนสอบวิชา Web Application ของรหัสนักศึกษา : {id}");
+            return View();
         }
     }
 }
